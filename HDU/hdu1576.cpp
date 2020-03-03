@@ -14,17 +14,15 @@ int ex_gcd(int a, int b, int &x, int &y){
     return r;
 }
 int main(){
-    int a, b, x, y;
-    while(scanf("%d%d", &a, &b) != EOF){
-        if(__gcd(a, b) != 1) puts("sorry");
-        else{
-            ex_gcd(a, b, x, y);
-            while(x < 0){
-                x += b;
-                y -= a;
-            }
-            printf("%d %d\n", x, y);
-        }
+    int t;
+    scanf("%d", &t);
+    while(t--){
+        int n, B, x, y;
+        scanf("%d%d", &n, &B);
+        ex_gcd(9973, B, x, y);
+        y = y * n;
+        while(y < 0) y += 9973;
+        printf("%d\n", y % 9973);
     }
     return 0;
 }
