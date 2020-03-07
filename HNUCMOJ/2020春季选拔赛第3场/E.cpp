@@ -18,10 +18,7 @@ int main()
         int x, y;
         y = n / 4;
         x = (n - y * 4) / 2;
-        printf("%d ", x + y);
-        x = n / 2;
-        y = (n - x * 2) / 4;
-        printf("%d\n", x + y);
+        printf("%d %d\n", x + y, n / 2);
     }
     return 0;
 }
