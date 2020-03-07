@@ -13,7 +13,6 @@ int main(){
             dp[i] = max(0, dp[i - 1]) + (s[i] == '1' ? -1 : 1);
             if(s[i] == '1') ++sum1;
             ans = max(ans, dp[i]);
-            printf("i:%d dp:%d\n", i, dp[i]);
         }
         printf("%d\n", ans + sum1);
     }
