@@ -71,7 +71,6 @@ int main()
     //freopen("D.out", "w", stdout);
     while(scanf("%d%d", &n, &m) != EOF){
         for(int i = 0; i < n; ++i) scanf("%s", mp[i]);
-        int cnt = 0;
         for(int i = 0; i < n; ++i){
             for(int j = 0; j < m; ++j){
                 for(int k = 0; k < 3; ++k){
