@@ -3,7 +3,13 @@
         {
             "name": "LLVM",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "D:/developTools/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                "D:/developTools/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                "D:/developTools/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                "D:/developTools/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/",
+                "D:/developTools/LLVM/include",
+                "D:/developTools/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"
             ],
             "defines": [
                 "_DEBUG",
@@ -14,23 +20,14 @@
             "compilerPath": "D:/developTools/LLVM/bin/c++.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64"
-        },
-        {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "windowsSdkVersion": "8.1",
-            "compilerPath": "D:/developTools/LLVM/bin/c++.exe",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "msvc-x64"
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                     "D:/developTools/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/",
+                     "D:/developTools/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                     "D:/developTools/LLVM/include*"
+                ]
+            }
         }
     ],
     "version": 4
