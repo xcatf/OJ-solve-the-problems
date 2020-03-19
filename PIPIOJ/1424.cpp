@@ -13,7 +13,9 @@ bool f(ll x, bool fg)
 }
 int main()
 {
-    scanf("%lld", &n);
-    puts(f(n, 1) ? "PIPI" : "POPO");
+    for(int i = 1; i <= 100; ++i){
+        printf("%d:", i);
+        puts(f(i, 1) ? "PIPI" : "POPO");
+    }
     return 0;
 }
