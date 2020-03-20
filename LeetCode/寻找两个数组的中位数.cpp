@@ -28,10 +28,10 @@ public:
     }
 };
 int main(){
-    int a[] = {1,3,5,7,9};
-    int b[] = {2,4,6,8,10};
-    vector<int>num1(a,a+5),num2(b,b+5);
-    for(int i=0;i<5;++i) printf("%d%c",a[i],i==4?'\n':' ');
+    int a[] = {6,7,8,9};
+    int b[] = {1,2,3,4,5};
+    vector<int>num1(a,a+4),num2(b,b+5);
+    for(int i=0;i<4;++i) printf("%d%c",a[i],i==3?'\n':' ');
     for(int i=0;i<5;++i) printf("%d%c",b[i],i==4?'\n':' ');
     Solution sol;
     printf("%.2f\n", sol.findMedianSortedArrays(num1,num2));
