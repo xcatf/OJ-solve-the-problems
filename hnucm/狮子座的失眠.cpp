@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-static const int maxn = 1e3 + 5;
+static const int maxn=1e3+5;
 char s[10][5]={"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu"}; 
 bool f;
 void solve(int n){
