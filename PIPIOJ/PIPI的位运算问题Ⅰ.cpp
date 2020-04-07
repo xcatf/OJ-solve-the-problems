@@ -6,13 +6,16 @@ int main(){
     ll L,R;
     scanf("%lld%lld",&L,&R);
     if(L>R) swap(L,R);
-    ll t=1,ans=0;
-    while(R){
-        if((L&1)&(R&1)){}
-        else ans+=t;
-        t<<=1;
-        R>>=1;
-        L>>=1;
+    ll ans=0;
+    bool f=0;
+    for(int i=60;i>=0;--i){
+        ll d=1ll<<i;
+        if(d>R) continue;
+        int r=(R>>i)&1;
+        int l=(L>>i)&1;
+        if(r!=l) ans+=d;
+        else if(r==0) ans+=d,f=1;
+        else if(f) ans+=d;
     }
     printf("%lld\n",ans);
     return 0;

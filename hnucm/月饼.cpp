@@ -9,8 +9,6 @@ struct node{
     }
 }v[maxn];
 int main(){
-    // freopen("data/cake5.in","r",stdin);
-    // freopen("data/cake5.out","w",stdout);
     int n;
     double d;
     scanf("%d%lf",&n,&d);
