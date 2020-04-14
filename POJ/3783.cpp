@@ -4,7 +4,7 @@
 #include <cstring>
 using namespace std;
 typedef long long ll;
-static const int maxn = 1e3 + 5;
+static const int maxn = 1e5 + 5;
 int dp[maxn][55];
 int main(){
     int t;
